@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจองที่นั่ง</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="schedule-container">
+            <h2>จองที่นั่งสำหรับผู้คุมสอบ</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ลำดับ</th>
+                        <th>ชื่อ</th>
+                        <th>MONDAY, 30 SEP 2024</th>
+                        <th>TUESDAY, 01 OCT 2024</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>กนกวรรณ ขับขาน</td>
+                        <td>
+                            <button class="select-time" data-day="monday" data-time="09:00 - 10:30" data-available="3">09:00 - 10:30</button>
+                            <p class="available">คงเหลือ 3 ที่นั่ง</p>
+                            <button class="select-time" data-day="monday" data-time="11:00 - 12:30" data-available="2">11:00 - 12:30</button>
+                            <p class="available">คงเหลือ 2 ที่นั่ง</p>
+                            <button class="select-time" data-day="monday" data-time="14:00 - 15:30" data-available="1">14:00 - 15:30</button>
+                            <p class="available">คงเหลือ 1 ที่นั่ง</p>
+                        </td>
+                        <td>
+                            <button class="select-time" data-day="tuesday" data-time="09:00 - 10:30" data-available="2">09:00 - 10:30</button>
+                            <p class="available">คงเหลือ 2 ที่นั่ง</p>
+                            <button class="select-time" data-day="tuesday" data-time="11:00 - 12:30" data-available="3">11:00 - 12:30</button>
+                            <p class="available">คงเหลือ 3 ที่นั่ง</p>
+                            <button class="select-time" data-day="tuesday" data-time="14:00 - 15:30" data-available="1">14:00 - 15:30</button>
+                            <p class="available">คงเหลือ 1 ที่นั่ง</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="submit-selection" disabled>บันทึกการเลือก</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-container {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.schedule-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.schedule-container th,
+.schedule-container td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.schedule-container th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.schedule-container td {
+    background-color: #f9f9f9;
+}
+
+.schedule-container .select-time {
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.schedule-container .select-time:hover {
+    background-color: #45a049;
+}
+
+.schedule-container .select-time:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#submit-selection {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#submit-selection:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
